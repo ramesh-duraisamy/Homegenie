@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-05 13:27:13.233090",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "roc_target",
+  "bio_target",
+  "dd_target",
+  "timbe_target",
+  "total_target",
+  "start_date",
+  "end_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "roc_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rocotile Target",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bio_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bioman Target",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dd_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "D'Sign Door Target",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timbe_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Timbe Target",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_target",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Target",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "month.f_date",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "month.t_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Target Distribution",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-19 15:15:07.644295",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Target Distribution",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

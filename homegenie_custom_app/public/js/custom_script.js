@@ -1,0 +1,14 @@
+frappe.ui.form.on('Quotation',{
+    company:function(frm)
+    {
+        frappe.call({
+            method:'homegenie_custom_app.custom_script.api.get_address',
+            args:{
+                name:frm.doc.company
+            },
+            callback:(r)=>{
+                console.log(r.message)
+            }
+        })
+    }
+})

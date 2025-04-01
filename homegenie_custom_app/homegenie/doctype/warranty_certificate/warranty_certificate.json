@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-06-27 17:00:11.868965",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_fa8o9",
+  "purchase_date",
+  "warranty_type",
+  "section_break_jbxbk",
+  "customer_name",
+  "mobile",
+  "company",
+  "brand",
+  "section_break_xfp4d",
+  "invoice_number",
+  "installation_note",
+  "warranty_starts_from",
+  "warranty_ends_on",
+  "total_warranty_period",
+  "product_details_section",
+  "product_details",
+  "terms_and_conditions_tab",
+  "terms",
+  "term_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "options": "RT-WARNT-.###\nBIO-WARNT-.###\nTIMB-WARNT-.###\nDD-WARNT-.###"
+  },
+  {
+   "fieldname": "column_break_fa8o9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "warranty_type",
+   "fieldtype": "Select",
+   "label": "Warranty Type",
+   "options": "\nSales\nInstallation\nRepair and Service\nMaintenance"
+  },
+  {
+   "fieldname": "section_break_jbxbk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Link",
+   "label": "Mobile",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "section_break_xfp4d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Link",
+   "label": "Invoice Number",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "installation_note",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Installation Note",
+   "options": "Installation Note"
+  },
+  {
+   "fieldname": "warranty_starts_from",
+   "fieldtype": "Date",
+   "label": "Warranty starts from "
+  },
+  {
+   "fieldname": "warranty_ends_on",
+   "fieldtype": "Date",
+   "label": "Warranty ends on"
+  },
+  {
+   "fieldname": "total_warranty_period",
+   "fieldtype": "Int",
+   "label": "Total Warranty period"
+  },
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Table",
+   "label": "Product Details",
+   "options": "Warranty Item"
+  },
+  {
+   "fieldname": "terms_and_conditions_tab",
+   "fieldtype": "Tab Break",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "term_details",
+   "fieldtype": "Text Editor",
+   "label": "Term Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-27 17:02:25.364021",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Warranty Certificate",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

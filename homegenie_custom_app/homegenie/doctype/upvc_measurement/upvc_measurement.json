@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-27 17:12:02.461125",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room_details",
+  "width_1",
+  "width_2",
+  "width_3",
+  "variation",
+  "profile_section",
+  "height_1",
+  "height_2",
+  "height_3",
+  "variation_1",
+  "wall_thick",
+  "detailed_specification_section",
+  "profile",
+  "lock",
+  "handle",
+  "hinges",
+  "al_rail",
+  "mesh",
+  "glass",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_details",
+   "fieldtype": "Data",
+   "label": "Room Details"
+  },
+  {
+   "fieldname": "width_1",
+   "fieldtype": "Int",
+   "label": "Width 1"
+  },
+  {
+   "fieldname": "width_2",
+   "fieldtype": "Int",
+   "label": "Width 2"
+  },
+  {
+   "fieldname": "width_3",
+   "fieldtype": "Int",
+   "label": "Width 3"
+  },
+  {
+   "fieldname": "variation",
+   "fieldtype": "Int",
+   "label": "Variation"
+  },
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "height_1",
+   "fieldtype": "Int",
+   "label": "Height 1"
+  },
+  {
+   "fieldname": "height_2",
+   "fieldtype": "Int",
+   "label": "Height 2"
+  },
+  {
+   "fieldname": "height_3",
+   "fieldtype": "Int",
+   "label": "Height 3"
+  },
+  {
+   "fieldname": "variation_1",
+   "fieldtype": "Int",
+   "label": "Variation 1"
+  },
+  {
+   "fieldname": "wall_thick",
+   "fieldtype": "Int",
+   "label": "Wall thick"
+  },
+  {
+   "fieldname": "detailed_specification_section",
+   "fieldtype": "Section Break",
+   "label": "Detailed Specification"
+  },
+  {
+   "fieldname": "profile",
+   "fieldtype": "Data",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "lock",
+   "fieldtype": "Data",
+   "label": "Lock"
+  },
+  {
+   "fieldname": "handle",
+   "fieldtype": "Data",
+   "label": "Handle"
+  },
+  {
+   "fieldname": "hinges",
+   "fieldtype": "Data",
+   "label": "Hinges"
+  },
+  {
+   "fieldname": "al_rail",
+   "fieldtype": "Data",
+   "label": "AL Rail"
+  },
+  {
+   "fieldname": "mesh",
+   "fieldtype": "Data",
+   "label": "Mesh"
+  },
+  {
+   "fieldname": "glass",
+   "fieldtype": "Data",
+   "label": "Glass"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-06-27 17:12:02.461125",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "uPVC Measurement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

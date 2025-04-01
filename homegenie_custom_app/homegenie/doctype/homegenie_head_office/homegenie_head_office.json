@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2024-06-04 17:16:52.160906",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "section_break_h4mhe",
+  "latitude",
+  "column_break_ekj5s",
+  "longitude",
+  "column_break_tch5d",
+  "allowd_distance_meters",
+  "section_break_edz67",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Latitude",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ekj5s",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Longitude",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_edz67",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_h4mhe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_tch5d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "500",
+   "fieldname": "allowd_distance_meters",
+   "fieldtype": "Float",
+   "label": "Allowd Distance (Meters)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-04 18:36:53.870796",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Homegenie Head Office",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

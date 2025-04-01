@@ -1,0 +1,224 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-07 16:13:03.037186",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "installation_date",
+  "customer",
+  "delivery_note",
+  "installation_note_id",
+  "brand",
+  "sales_person",
+  "column_break_2jahw",
+  "installation_time",
+  "quotation",
+  "reference_no",
+  "company",
+  "project",
+  "quotation_id",
+  "installation_items_section",
+  "installation_item_table",
+  "address_and_contact_tab",
+  "customer_address",
+  "address",
+  "column_break_yj3nt",
+  "contact_person",
+  "customer_contact",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Installation Request",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2jahw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Installation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "installation_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Installation Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address_and_contact_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "installation_items_section",
+   "fieldtype": "Section Break",
+   "label": "Installation Items"
+  },
+  {
+   "fieldname": "installation_item_table",
+   "fieldtype": "Table",
+   "label": "Installation Item Table",
+   "options": "Installation Request Item"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Installation Request",
+   "options": "IR-.###"
+  },
+  {
+   "fieldname": "column_break_yj3nt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact",
+   "options": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "HTML",
+   "label": "Customer Address"
+  },
+  {
+   "fieldname": "customer_contact",
+   "fieldtype": "HTML",
+   "label": "Customer Contact"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "quotation_id",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Quotation Id",
+   "options": "Quotation",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "installation_note_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Installation Note",
+   "options": "Installation Note"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "sales_person",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Sales Person",
+   "options": "Sales Person"
+  },
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Quotation",
+   "link_fieldname": "custom_installation_request"
+  },
+  {
+   "link_doctype": "Installation Note",
+   "link_fieldname": "custom_installation_request_id"
+  }
+ ],
+ "modified": "2025-03-15 15:13:54.351876",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Installation Request",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

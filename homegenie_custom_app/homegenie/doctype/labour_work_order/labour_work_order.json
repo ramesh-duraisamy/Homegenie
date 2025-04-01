@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-16 14:50:24.058922",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "labours",
+  "no_of_labours",
+  "purpose",
+  "order_id",
+  "to_brand",
+  "notes",
+  "column_break_sf121",
+  "status",
+  "company",
+  "from",
+  "to",
+  "time",
+  "per_labour_cost",
+  "total_labour_cost",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "\nRT-LW-.###\nBIO-LW-.###\nDD-LW-.###\nTM-LW-.###",
+   "read_only": 1
+  },
+  {
+   "fieldname": "labours",
+   "fieldtype": "Table MultiSelect",
+   "label": "Labours",
+   "options": "Employee List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_labours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No of labours",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Purpose",
+   "options": "\nUnloading\nOther Works\nTo Other Brand",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.purpose == 'Unloading'",
+   "fieldname": "order_id",
+   "fieldtype": "Link",
+   "label": "Order ID",
+   "mandatory_depends_on": "eval:doc.purpose == 'Unloading'",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Labour Work Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes",
+   "mandatory_depends_on": "eval:doc.purpose == 'Other Works'"
+  },
+  {
+   "fieldname": "column_break_sf121",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nApproved\nCancelled\nCompleted\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Datetime",
+   "label": "From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Datetime",
+   "label": "To"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Float",
+   "label": "Time (In Hours)"
+  },
+  {
+   "fieldname": "per_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Per Labour Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Total Labour Cost"
+  },
+  {
+   "depends_on": "eval:doc.purpose!='Other Works'",
+   "fieldname": "to_brand",
+   "fieldtype": "Link",
+   "label": "To Brand",
+   "mandatory_depends_on": "eval:doc.purpose=='To Other Brand'",
+   "options": "Brand"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-20 16:33:50.894822",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Labour Work Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

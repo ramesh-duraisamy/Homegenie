@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-14 17:55:40.078183",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quotation",
+  "sign",
+  "date",
+  "order_id",
+  "project",
+  "column_break_envjc",
+  "installation_note",
+  "signature",
+  "work_completion_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Signature",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Link",
+   "label": "Order Id",
+   "options": "Order Confirmation Form"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Confirmation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_envjc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "installation_note",
+   "fieldtype": "Link",
+   "label": "Installation Note",
+   "options": "Installation Note"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "work_completion_id",
+   "fieldtype": "Link",
+   "label": "Work Completion ID",
+   "options": "Work Completion Certificate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-28 15:08:10.086874",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Order Confirmation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,625 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-03 14:08:44.694174",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "cus_order_confirm",
+  "date",
+  "column_break_1",
+  "company",
+  "column_break_2",
+  "order_no",
+  "sales_person",
+  "section_break_1",
+  "customer",
+  "customer_name",
+  "customer_gstin",
+  "column_break_3",
+  "email",
+  "column_break_4",
+  "customer_mobile",
+  "customer_phone",
+  "product_order_details_section",
+  "item_detail",
+  "section_break_2",
+  "total_qty",
+  "total_sqft",
+  "column_break_9",
+  "sub_total",
+  "tax_gstin",
+  "discount",
+  "total_amount",
+  "payment_details",
+  "ad_amt",
+  "before_delivery",
+  "post_install",
+  "column_break_10",
+  "exp_del_date",
+  "exp_ins_date",
+  "payment_method",
+  "cash",
+  "column_break_11",
+  "cheque",
+  "column_break_12",
+  "bank_transfer",
+  "column_break_13",
+  "credit_card",
+  "section_break_3",
+  "timbe_tnc",
+  "timbe_warranty",
+  "timbe_other",
+  "timbe_survey",
+  "ack_accept",
+  "customers_signature__seal",
+  "cus_sign",
+  "sign_date",
+  "column_break_14",
+  "acceptance",
+  "for_timbe_windows_private_limited",
+  "authorised_signatory",
+  "company_sign",
+  "for_company_use",
+  "cro_name",
+  "cro_date",
+  "column_break_15",
+  "pro_incharge",
+  "pro_date",
+  "column_break_ibnrv",
+  "designer",
+  "design_date",
+  "address_tab",
+  "bill_ad",
+  "billing_address",
+  "b_adl1",
+  "b_state",
+  "column_break_5",
+  "b_adl2",
+  "column_break_6",
+  "b_city",
+  "b_pincode",
+  "del_ad",
+  "delivery_address",
+  "d_adl1",
+  "d_state",
+  "column_break_7",
+  "d_adl2",
+  "column_break_8",
+  "d_city",
+  "d_pincode",
+  "terms_and_conditions_tab",
+  "terms",
+  "term_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "cus_order_confirm",
+   "fieldtype": "Section Break",
+   "label": "Customer Order Confirmation"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Doortisan Creations Private Limited",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "order_no",
+   "fieldtype": "Link",
+   "label": "Order No",
+   "options": "Quotation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_gstin",
+   "fieldtype": "Data",
+   "label": "Customer GSTIN"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Customer Mobile",
+   "length": 10,
+   "options": "Phone"
+  },
+  {
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "label": "Customer Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "bill_ad",
+   "fieldtype": "Section Break",
+   "label": "Billing Address"
+  },
+  {
+   "fieldname": "b_adl1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "b_state",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "\nAndaman Nicobar\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b_adl2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "b_city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "b_pincode",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "del_ad",
+   "fieldtype": "Section Break",
+   "label": "Delivery Address"
+  },
+  {
+   "fieldname": "d_adl1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "d_state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nAndaman Nicobar\nAndhra Pradesh\nArunachal Pradesh\nAssam\nBihar\nChandigarh\nChhattisgarh\nDadra and Nagar Haveli and Daman and Diu\nDelhi\nGoa\nGujarat\nHaryana\nHimachal Pradesh\nJammu Kashmir\nJharkhand\nKarnataka\nKerala\nLadakh\nLakshadweep\nMadhya Pradesh\nMaharashtra\nManipur\nMeghalaya\nMizoram\nNagaland\nOdisha\nPuducherry\nPunjab\nRajasthan\nSikkim\nTamil Nadu\nTelangana\nTripura\nUttar Pradesh\nUttarakhand\nWest Bengal"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_adl2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d_city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "d_pincode",
+   "fieldtype": "Int",
+   "label": "Pincode",
+   "length": 6
+  },
+  {
+   "fieldname": "product_order_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Order Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 5,
+   "fieldname": "item_detail",
+   "fieldtype": "Table",
+   "label": "Item Detail",
+   "options": "Order Form Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "amended_from.sub_total",
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Net Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "tax_gstin",
+   "fieldtype": "Currency",
+   "label": "Tax(GSTIN)",
+   "options": "currency"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "ad_amt",
+   "fieldtype": "Currency",
+   "label": "Advance Amount"
+  },
+  {
+   "fieldname": "before_delivery",
+   "fieldtype": "Currency",
+   "label": "Before Delivery"
+  },
+  {
+   "fieldname": "post_install",
+   "fieldtype": "Currency",
+   "label": "Post-Installation"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exp_del_date",
+   "fieldtype": "Date",
+   "label": "Expected Delivery Date"
+  },
+  {
+   "fieldname": "exp_ins_date",
+   "fieldtype": "Date",
+   "label": "Expected Installation Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Section Break",
+   "label": "Payment Method"
+  },
+  {
+   "default": "0",
+   "fieldname": "cash",
+   "fieldtype": "Check",
+   "label": "Cash"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cheque",
+   "fieldtype": "Check",
+   "label": "Cheque"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "bank_transfer",
+   "fieldtype": "Check",
+   "label": "Bank Transfer"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "credit_card",
+   "fieldtype": "Check",
+   "label": "Credit Card"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "timbe_tnc",
+   "fieldtype": "HTML",
+   "label": "Timbe Terms And Conditions",
+   "options": "<style>\n        /* CSS styling for the unordered list */\n        ul {\n            list-style-type: disc; /* Changing the bullet point style */\n        }\n\n        ul li {\n            font-size: 15px; /* Increasing the font size of list items */\n            margin-bottom: 5px; /* Adding space between list items */\n        }\n    </style>\n<h4>Terms And Condition</h4>\n<ul>\n<li>Order Cancellation : Cancellations Made Within 24hours of Order Placement Will be Refunded in Full.</li>\n<li>Product Warranty : All Timbe Windows Pvt Ltd's, Windows are Warrantied against Manufacturing Defects for a Period of 10 years from the Date of Installation.</li>\n<li>This Product's Warranty, Provided by Timbe windows Pvt Ltd, Covers a Period of Ten Years for uPVC Pro\ufb01le and One Year for Associate Hardware in uPVC Pro\ufb01le or Pro\ufb01le Part or Hardware Used in Manufacturing of Windows/Doors.</li>\n<li>This Product's Warranty, Provided by Timbe Windows Pvt Ltd, also Covers a Period of One Year for Internal Door and Associate Hardware from the Month of Dispatch.</li>\n<li>This Warranty Only Extends to Original Purchaser</li>\n<li>Upon Return of the Defective Product to Timbe Windows Pvt Ltd within the Warranty Period it Shall Repair/Replace the Product as may be Required Free of Charge at its Sole Discretion and Judgment</li>\n<li>The Warranty is Only Applicable if the Products i.e (Handle, Hinges etc.) are Installed by Timbe Windows Pvt Ltd.</li>\n<li>This Warranty Covers Defects Due to all Faulty Parts and/or Functions, Resulting Despite User's Normal Use Will be Repaired and/or Replaced at no Charge During the Warranty Period.</li>\n</ul>\n"
+  },
+  {
+   "fieldname": "timbe_warranty",
+   "fieldtype": "HTML",
+   "label": "Timbe Warranty ",
+   "options": "<style>\n        /* CSS to increase the font size of ordered list items */\n        ol.lower-roman {\n            list-style-type: lower-roman;\n        }\n\n        ol.lower-roman li {\n            font-size: 15px;\nmargin-bottom: 5px; /* Change this value to increase or decrease the font size */\n        }\n    </style>\n<h5>The Warranty shall not apply to following :</h5>\n<ol class=\"lower-roman\" type=\"i\">\n<li>In Case of Breakage/Crack of the Glass.</li>\n<li>If the Copy of Invoice is Not Produced at the Time of Warranty Claim.</li>\n<li>Any Product for which you have Not Paid as Per the Agreed Payment Schedule.</li>\n<li>Any Defects in Windows &amp; Doors, Internal Doors Arising from Wear and Tear, willful or Accidental Damage, Negligence, Neglect, Misuse, Breakages, Scratches, Structural or Latent Defects at Your Property or Causes Beyond Our Control. Malfunction or Damage due to inappropriate Operation or Impact, Improper Use, Abuse or Negligence by the Customer, or to any Misuse of the Product as Described in Manufacture Manual/Guidelines.</li>\n<li>Damage  Caused  due  to Weather  and  Environmental  Conditions.</li>\n<li>In Case of Product Fnishing is affected by Colour, Gloss and Luster of the Article.</li>\n<li>If Exposed with any Chemical Substance, Oil, Lubricants, Acid Fumes, Liquid Steam etc.</li>\n<li>Products are Re\ufb01tted or Tempered with Installation in any Manner or any Product Installed by Unauthorized Service Person. Improper Fxing the Products by NonRrecommended Tools and Practices.</li>\n<li>Use of Goods Contrary to Our Recommendations.</li>\n<li>Products which cannot be accessed for Routine Service and Damage to the Operating Mechanism caused by the Presence of Dirt and Debris from Inadequate Maintenance.</li>\n<li>If Grills(Fix) are Mounted on Sill and Windows/Doors Cannot be Accessed for Service.</li>\n<li>Civil Work, Painting, Pop, Fooring and Other Work of Similar Nature is Carried out after Installation of Products leading to Damage to Product &amp; Hardware or Affecting Performance of Product &amp; Hardware (Rollers, Handle, Friction Stay, etc.) in the Long-Term.</li>\n<li>Performance of the Product Varies According to the Outer Environment and Uses.</li>\n<li>Warranty is Null and Void if the Doors &amp; Windows are not Installed and Handed Over within 30 Days of Dispatch.</li>\n<li>In Case of Damage to the \"Shades and Surface Fnish\" due to Usage of Aggressive Cleaner and Contrary toRrecommended Use of Cleaning Details as Mentioned in Terms of the Agreement.</li>\n</ol>"
+  },
+  {
+   "fieldname": "timbe_other",
+   "fieldtype": "HTML",
+   "label": "Other Tearms",
+   "options": "<style>\n p {\n       font-size: 15px;\n}\n</style>\n<p>Timbe Windows Pvt Ltd, also Reserve the Right of Changing any or All Terms and Condition Under this Warranty Without Prior Notice and also on Admissibility of Claim Under this Warranty.<br><br>\nNo Terms and Conditions Other than those Stated Herein, and No Agreement or Understanding, Oral or Written, Executed or Expressed Prior to this Warranty in any Way Shall be Binding to Timbe Windows Pvt Ltd.<br><br>\nThe Warranty can be Invoked only after Making Payment of the Invoice in full Within Prescribed Time.<br><br>\nInstallation Clause : The Installation Will be Carried Out by Certi\ufb01ed Timbe Windows Pvt Ltd Technicians. Any Damages or Issues during Installation Will be Addressed by the Company.<br><br>Reporting Discrepancies : Customers Must Report any Damages, Defects, or Discrepancies in the Received Product Within 24 Hours of Delivery for Immediate Resolution.</p>"
+  },
+  {
+   "fieldname": "timbe_survey",
+   "fieldtype": "HTML",
+   "label": "Timbe Survey",
+   "options": "<style>\n       ol.lower-roman {\n    list-style-type: lower-roman;\n}\n\n/* CSS for list items within lower-roman ordered list */\nol.lower-roman li {\n    font-size: 15px;\n    margin-bottom: 5px; /* Adjusting the space between list items */\n}\n\n/* CSS for paragraphs */\np {\n    font-size: 15px; /* Setting font size for paragraphs */\n}\nul {\n            list-style-type: disc; /* Changing the bullet point style */\n        }\n\n        ul li {\n            font-size: 15px; /* Increasing the font size of list items */\n            margin-bottom: 5px; /* Adding space between list items */\n        }\n    </style>\n<h4>Survey :</h4>\n<ol class=\"lower-roman\" type=\"i\">\n<li>We may Carry Out a Survey to Make Sure that What you have Requested can Properly be Installed at Your Site/Premises. If Problems arise at Survey, We Will let you Know.</li>\n<li>You Agree that all Drawings, Speci\ufb01cation, Notes, Abbreviations (i,e Make-Ups, Add-Ons &amp; Trims) and Proportions (i.e Vent Heights, Casement Widths etc., Sill Depth, Height, Widths) have been Explained to you by the Surveyor and all Information Agreed in Writing to on this Survey is Contractually Binding Upon you Under the Terms and Conditions of this Contract.</li>\n<li>It be Expressly Understood that Final Production of the Product will Commence Only After Survey is Done.</li>\n<li>You Agree that All Information Discussed Between Yourself and the Representative has been Passed to the Surveyor, as well as any Relevant Information Regarding the Appearance has been Added to the Contract in Your Presence.</li>\n<li>Internal Windows Come in Standard Sizes. The Aperture Sizes Mentioned on the Enclosed Quotation have to be Maintained by you at Site. We may Allow Tolerant Limit of Aperture Size Upto +-10MM in Width and +-10MM in Height. In Case the Aperture Sizes go Beyond Tolerant Limit Then Civil Work for Aperture Correction Will be Carried Out by You at Your Cost</li>\n<li>If we cannot reach consensus on aperture correction, TIMBE reserve the right to cancel your order</li>\n</ol>\n<p>\nDelivery Schedule : If any Delivery Dates Communicated to You, these can Only be Estimates. Actual Dates May Vary. We Will let You Know When the Products are Ready. We Will do Our Best to Keep to this Date but if Delay arises due to Reasons beyond Our Control, We will let you Know and Offer you the Next Earliest Convenient Date. Time is not the Essence of the Contract. In the Event of a Special Glass being Requested, We can Only Work to Delivery Times Supplied by the Glass Manufacturer. Some Special Glasses may Add 6-8 Weeks on to Standard Delivery Times.</p>\n<ul>\n<li>This Agreement Constitutes the Entire Agreement Between Us. No Agreements, Representations, or Warranties Other than those Speci\ufb01cally Set Forth Herein Shall be Binding on any of the Parties Unless Set Forth in Writing and Signed by both Parties.</li>\n<li>Limitation of Liability : Timbe Windows Pvt Ltd Liability Under this Order is Limited to the Purchase Price of the Products. We Shall not be Responsible for any Indirect, Incidental, or Consequential Damages.</li>\n<li>Legal Jurisdiction : All Disputes and Claims related to this Order Shall fall Under the Jurisdiction of Chennai's Legal System.</li></ul>\n\n"
+  },
+  {
+   "fieldname": "ack_accept",
+   "fieldtype": "Section Break",
+   "label": "Acknowledgment and Acceptance :"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "customers_signature__seal",
+   "fieldtype": "Heading",
+   "label": "Customer Signature"
+  },
+  {
+   "fieldname": "cus_sign",
+   "fieldtype": "Signature"
+  },
+  {
+   "fieldname": "sign_date",
+   "fieldtype": "Date",
+   "label": "Sign Date"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "acceptance",
+   "fieldtype": "HTML",
+   "label": "Acceptance",
+   "options": "<br><p>hereby con\ufb01rm that I have read, understood, and agree to the above terms and conditions associated with my order</p><br><br>"
+  },
+  {
+   "fieldname": "for_timbe_windows_private_limited",
+   "fieldtype": "Heading",
+   "label": "For Timbe windows Private Limited"
+  },
+  {
+   "fieldname": "authorised_signatory",
+   "fieldtype": "Heading",
+   "label": "Authorised Signatory"
+  },
+  {
+   "fieldname": "company_sign",
+   "fieldtype": "Signature"
+  },
+  {
+   "fieldname": "for_company_use",
+   "fieldtype": "Section Break",
+   "label": "For Company Use"
+  },
+  {
+   "fieldname": "cro_name",
+   "fieldtype": "Link",
+   "label": "Cro Name",
+   "options": "User"
+  },
+  {
+   "fieldname": "cro_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pro_incharge",
+   "fieldtype": "Link",
+   "label": "Production Incharge",
+   "options": "User"
+  },
+  {
+   "fieldname": "pro_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_ibnrv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "designer",
+   "fieldtype": "Link",
+   "label": "Designer",
+   "options": "User"
+  },
+  {
+   "fieldname": "design_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Order Confirmation Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Link",
+   "label": "Delivery Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "billing_address",
+   "fieldtype": "Link",
+   "label": "Billing Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "terms_and_conditions_tab",
+   "fieldtype": "Tab Break",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fetch_from": "terms.terms",
+   "fieldname": "term_details",
+   "fieldtype": "Text Editor",
+   "label": "Term Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nRT-ORD-.###\nBIO-ORD-.###\nDD-ORD-.###\nTIMB-ORD-.###"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_person",
+   "fieldtype": "Data",
+   "label": "Sales Person"
+  },
+  {
+   "fieldname": "total_sqft",
+   "fieldtype": "Float",
+   "label": "Total Sq.Ft",
+   "precision": "3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Order",
+   "link_fieldname": "custom_order_confirmation_form"
+  }
+ ],
+ "modified": "2025-03-15 15:40:11.611187",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Order Confirmation Form",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

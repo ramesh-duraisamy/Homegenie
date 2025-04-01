@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-02 18:53:07.113584",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "source_address",
+  "source_latitude",
+  "source_longitude",
+  "column_break_shfqu",
+  "event_id",
+  "destination_address",
+  "destination_latitude",
+  "destination_longitude",
+  "column_break_q63we",
+  "date",
+  "distance",
+  "section_break_6nh8o",
+  "distance_response"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User"
+  },
+  {
+   "fieldname": "column_break_shfqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event ID"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Distance"
+  },
+  {
+   "fieldname": "column_break_q63we",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "source_address",
+   "fieldtype": "Small Text",
+   "label": "Source Address"
+  },
+  {
+   "fieldname": "destination_address",
+   "fieldtype": "Small Text",
+   "label": "Destination Address"
+  },
+  {
+   "fieldname": "section_break_6nh8o",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "distance_response",
+   "fieldtype": "Code",
+   "label": "Distance Response"
+  },
+  {
+   "fieldname": "source_latitude",
+   "fieldtype": "Data",
+   "label": "Source Latitude"
+  },
+  {
+   "fieldname": "source_longitude",
+   "fieldtype": "Data",
+   "label": "Source Longitude"
+  },
+  {
+   "fieldname": "destination_latitude",
+   "fieldtype": "Data",
+   "label": "Destination Latitude"
+  },
+  {
+   "fieldname": "destination_longitude",
+   "fieldtype": "Data",
+   "label": "Destination Longitude"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 12:13:58.040857",
+ "modified_by": "Administrator",
+ "module": "Homegenie",
+ "name": "Visit Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
